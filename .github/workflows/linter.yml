@@ -3,7 +3,6 @@ name: Linter
 on:
   workflow_run:
     workflows: ["Python Testrunner"]
-    branches: [main]
     types:
       - completed
 
