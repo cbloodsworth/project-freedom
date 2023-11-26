@@ -1,7 +1,10 @@
-name: "pre-commit - push autofix"
+name: "pre-commit - formatting autofix"
 on:
-  push:
+  workflow_run:
+    workflows: ["Python Testrunner"]
     branches: [main]
+    types:
+      - completed
 
 jobs:
   docs:
