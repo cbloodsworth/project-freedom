@@ -1,4 +1,6 @@
-name: Linter
+name: Lijter
+
+on: push
 
 jobs:
   tests:
